@@ -1,0 +1,61 @@
+body{
+  background:  rgb(0, 0, 0);
+  color: white;
+  font-family:  "helvetica neue", helvetica, arial, sans-serif; font-weight: 100;
+}
+
+.wrapper{
+  display: block;
+  position: relative;
+  top: 5vh;
+}
+
+.header{
+  font-size: 300%;
+  position: relative;
+  left: 15%;
+}
+
+.header p:nth-child(2) {
+  font-family: 'Orbitron', sans-serif;
+  line-height: 300%;
+  font-size: 40%;
+  position: relative;
+  text-shadow: 0 0 10px green, 0 0 20px green, 0 0 30px green, 0 0 40px green, 0 0 70px green, 0 0 80px green, 0 0 100px green, 0 0 150px green, 0 0 150px green, 0 0 150px green;
+}
+
+.main{
+  display: block;
+  position: relative;
+  top: 5vh;
+
+}
+
+.resimler{
+  flex-flow: row wrap;
+  position: relative;
+  padding-left: 5vw;
+}
+
+.resimler img{
+  border: solid white;
+  border-radius: 10%;
+  width: 25%;
+  height: auto;
+  -webkit-transition: width 0.5s; /* Safari */
+  transition: width 0.5s;
+}
+
+.resimler img:hover{
+  width: 45%;
+  align-content: center;
+}
+
+.footer{
+  position : relative;
+  bottom : 0;
+  padding-top: 10%;
+  width: 99vw;
+  text-align: center;
+  font-size: 75%;
+}
