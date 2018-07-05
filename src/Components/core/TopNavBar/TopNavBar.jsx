@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class TopNavBar extends Component {
-    constructor(props) {
-        super(props);
-    }
+    // constructor(props) {
+    //     super(props);
+    // }
     
     render() {
         return (
@@ -19,7 +19,7 @@ class TopNavBar extends Component {
 }
 
 TopNavBar.propTypes = {
-    logo: PropTypes.object,
+    logo: PropTypes.element,
     title: PropTypes.string
 };
 
