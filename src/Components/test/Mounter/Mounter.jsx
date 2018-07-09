@@ -1,20 +1,24 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom'
-import Counter from '../Counter/Counter';
+import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 
-class Wrapper extends Component {
+class Mounter extends Component {
     constructor(props) {
         super(props);
         this.state = {
             message: ""
-        }
+        };
+
+        this.props = {
+            mountaineer: () => {return(<div><p>something</p></div>);}
+        };
 
         this.mount.bind(this);
         this.unMount.bind(this);
     }
 
     mount = () => {
-        ReactDOM.render(<Counter/>, document.getElementById("counterComponent"));
+        ReactDOM.render(this.props.mountaineer, document.getElementById("counterComponent"));
     }
 
     unMount = () => {
@@ -23,7 +27,7 @@ class Wrapper extends Component {
 
     render() {
         return (
-            <div>
+            <div className="container text-center">
                 <input className="btn btn-info" type="button" value="Mount" onClick={this.mount}/>
                 <input className="btn btn-danger" type="button" value="Unmount" onClick={this.unMount}/>
                 <div id="counterComponent">
@@ -34,4 +38,8 @@ class Wrapper extends Component {
     }
 }
 
-export default Wrapper;
+Mounter.protoTypes = {
+    mountaineer: PropTypes.object
+}
+
+export default Mounter;

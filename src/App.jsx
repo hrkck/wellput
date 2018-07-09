@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import TopNavBar from "./Components/core/TopNavBar/TopNavBar";
-import Wrapper from './Components/test/Wrapper/Wrapper';
+import Mounter from './Components/test/Mounter/Mounter';
+import Counter from './Components/test/Counter/Counter';
+
 
 import logo from "./logo.svg";
 import "bootstrap/dist/css/bootstrap.css";
@@ -11,11 +13,8 @@ class App extends Component {
     render() {
         return (
             <div>
-                <TopNavBar logo={logo} title="Welcome to the reactive clones" />
-                <br/>
-                <div className="container text-center">
-                    <Wrapper></Wrapper>
-                </div>
+                <TopNavBar logo={logo} title="Welcome to the reactive clones" /> <br/>
+                <Mounter mountaineer={<Counter/>}></Mounter>
             </div>
         );
     }
