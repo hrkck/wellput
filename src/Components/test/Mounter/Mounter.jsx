@@ -10,7 +10,8 @@ class Mounter extends Component {
         };
 
         this.props = {
-            mountaineer: () => {return(<div><p>something</p></div>);}
+            mountaineer: null,
+            mountaineerID: null
         };
 
         this.mount.bind(this);
@@ -18,11 +19,11 @@ class Mounter extends Component {
     }
 
     mount = () => {
-        ReactDOM.render(this.props.mountaineer, document.getElementById("counterComponent"));
+        ReactDOM.render(this.props.mountaineer, document.getElementById(this.props.mountaineerID));
     }
 
     unMount = () => {
-        ReactDOM.unmountComponentAtNode(document.getElementById("counterComponent"));
+        ReactDOM.unmountComponentAtNode(document.getElementById(this.props.mountaineerID));
     }
 
     render() {
@@ -30,7 +31,7 @@ class Mounter extends Component {
             <div className="container text-center">
                 <input className="btn btn-info" type="button" value="Mount" onClick={this.mount}/>
                 <input className="btn btn-danger" type="button" value="Unmount" onClick={this.unMount}/>
-                <div id="counterComponent">
+                <div id={this.props.mountaineerID}>
                     {/* Here goes the counter component when mounted */}
                 </div>
             </div>
@@ -39,7 +40,8 @@ class Mounter extends Component {
 }
 
 Mounter.protoTypes = {
-    mountaineer: PropTypes.object
+    mountaineer: PropTypes.object.isRequired,
+    mountaineerID: PropTypes.string.isRequired
 }
 
 export default Mounter;

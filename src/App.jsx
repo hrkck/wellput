@@ -14,7 +14,7 @@ class App extends Component {
         return (
             <div>
                 <TopNavBar logo={logo} title="Welcome to the reactive clones" /> <br/>
-                <Mounter mountaineer={<Counter/>}></Mounter>
+                <Mounter mountaineer={<Counter/>} mountaineerID="Counter"></Mounter>
             </div>
         );
     }
