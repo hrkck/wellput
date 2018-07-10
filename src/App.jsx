@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import TopNavBar from "./Components/core/TopNavBar/TopNavBar";
-import Mounter from './Components/test/Mounter/Mounter';
+import Mounter from './Components/core/Mounter/Mounter';
 import Counter from './Components/test/Counter/Counter';
 
 
