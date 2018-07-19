@@ -1,20 +1,23 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 class TopNavBar extends Component {
-    // constructor(props) {
-    //     super(props);
-    // }
-
     render() {
         return (
             <div className="text-center">
-                <header className="App-header">
-                    <svg className="col-sm-1 spin">
-                        {this.props.logo}
-                    </svg>
-                    <h1 className="App-title">{this.props.title}</h1>
-                </header>
+                <nav class="navbar navbar-dark bg-dark">
+                    <div className="row align-items-center col-6">
+                        <svg className="col-sm-3 spin">{this.props.logo}</svg>
+                        <div className="col-sm-6 text-secondary">
+                            <h1>{this.props.title}</h1>
+                        </div>
+                    </div>
+                    <div className="row col-6 text-white">
+                        <div className="col-sm-2">Page 1</div>
+                        <div className="col-sm-2">Page 2</div>
+                        <div className="col-sm-2">Page 3</div>
+                    </div>
+                </nav>
             </div>
         );
     }
