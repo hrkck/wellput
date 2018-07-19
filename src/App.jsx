@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import TopNavBar from "./Components/core/TopNavBar/TopNavBar";
+import TopNavBar from "./Components/core/Nav/TopNavBar";
 import Mounter from './Components/core/Mounter/Mounter';
 import MounterLink from './Components/core/Mounter/MounterLink';
 import Counter from './Components/test/Counter/Counter';
-import SideNav from './Components/core/Nav/SideNav'
 
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
@@ -15,7 +14,6 @@ class App extends Component {
         return (
             <div>
                 <TopNavBar logo={<ReactLogo/>} title="Welcome to the reactive clones" /> <br />
-                <SideNav/>
                 <Mounter mountaineer={<Counter />} mountaineerID="Counter"></Mounter>
                 <MounterLink mountaineer={<Counter />} mountaineerID="CounterLink" mountaineerLinkID="CounterLinkID" mountaineerText="Mount Counter" />
                 <MounterLink mountaineer={<Counter />} mountaineerID="CounterLink2" mountaineerLinkID="CounterLinkID2" mountaineerText="Mount Counter2" />

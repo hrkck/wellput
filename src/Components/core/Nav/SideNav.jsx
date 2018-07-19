@@ -1,28 +1,21 @@
 import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
 
 class SideNav extends Component {
     render() {
         return (
-            <ul className="nav nav-tabs justify-content-center col-6 container">
-                <li className="nav-item">
-                    <button className="nav-link active btn">Somthing</button>
-                </li>
-                <li className="nav-item">
-                    <button className="nav-link btn">Somthing</button>
-                </li>
-                <li className="nav-item">
-                    <button className="nav-link btn">Somthing</button>
-                </li>
-                <li className="nav-item">
-                    <button className="nav-link btn">Somthing</button>
-                </li>
+            <ul className="nav nav-pills justify-content-around col-4 container">
+                <NavLink />
+                <NavLink />
+                <NavLink />
+                <NavLink />
                 <li className="nav-item dropdown">
-                    <button className="nav-link dropdown-toggle btn" data-toggle="dropdown" aria-expanded="false">dropdown</button>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">More</a>
                     <div className="dropdown-menu">
-                        <button className="dropdown-item btn">someting</button>
-                        <button className="dropdown-item btn">someting</button>
-                        <button className="dropdown-item btn">someting</button>
+                        <DropDownLink />
+                        <DropDownLink />
+                        <DropDownLink />
+                        <div class="dropdown-divider"></div>
+                        <DropDownLink />
                     </div>
                 </li>
             </ul>
@@ -30,8 +23,27 @@ class SideNav extends Component {
     }
 }
 
-// SideNav.propTypes = {
+const NavLink = (props) => {
+    return <li className="nav-item"><a className={props.isActive} href={props.link} onClick={props.clickAction}>{props.content}</a></li>
+}
 
-// };
+const DropDownLink = (props) => {
+    return <a className={props.isActive} href={props.link} onClick={props.clickAction}>{props.content}</a>
+}
+
+NavLink.defaultProps = {
+    link: "",
+    clickAction: (e) => e.preventDefault(),
+    isActive: "nav-link",
+    content: "Text"
+}
+
+DropDownLink.defaultProps = {
+    link: "",
+    clickAction: (e) => e.preventDefault(),
+    isActive: "dropdown-item",
+    content: "Text"
+}
+
 
 export default SideNav;

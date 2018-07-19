@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import SideNav  from "./SideNav"
 
 class TopNavBar extends Component {
     render() {
@@ -12,11 +13,7 @@ class TopNavBar extends Component {
                             <h1>{this.props.title}</h1>
                         </div>
                     </div>
-                    <div className="row col-6 text-white">
-                        <div className="col-sm-2">Page 1</div>
-                        <div className="col-sm-2">Page 2</div>
-                        <div className="col-sm-2">Page 3</div>
-                    </div>
+                    <SideNav/>
                 </nav>
             </div>
         );
