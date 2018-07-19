@@ -10,7 +10,9 @@ class TopNavBar extends Component {
         return (
             <div className="text-center">
                 <header className="App-header">
-                    <img src={this.props.logo} className="col-sm-1 spin" alt="logo" />
+                    <svg className="col-sm-1 spin">
+                        {this.props.logo}
+                    </svg>
                     <h1 className="App-title">{this.props.title}</h1>
                 </header>
             </div>
