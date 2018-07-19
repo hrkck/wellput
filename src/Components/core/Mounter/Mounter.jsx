@@ -29,8 +29,8 @@ class Mounter extends Component {
     render() {
         return (
             <div className="container text-center">
-                <input className="btn btn-info" type="button" value="Mount" onClick={this.mount}/>
-                <input className="btn btn-danger" type="button" value="Unmount" onClick={this.unMount}/>
+                <input className="btn btn-info" type="button" value="Mount" onClick={this.mount} />
+                <input className="btn btn-danger" type="button" value="Unmount" onClick={this.unMount} />
                 <div id={this.props.mountaineerID}>
                     {/* Here goes the counter component when mounted */}
                 </div>

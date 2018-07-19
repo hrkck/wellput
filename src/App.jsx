@@ -14,10 +14,10 @@ class App extends Component {
     render() {
         return (
             <div>
-                <TopNavBar logo={logo} title="Welcome to the reactive clones" /> <br/>
-                <Mounter mountaineer={<Counter/>} mountaineerID="Counter"></Mounter>
-                <MounterLink mountaineer={<Counter/>} mountaineerID="CounterLink" mountaineerLinkID="CounterLinkID" mountaineerText="Mount Counter"/>
-                <MounterLink mountaineer={<Counter/>} mountaineerID="CounterLink2" mountaineerLinkID="CounterLinkID2" mountaineerText="Mount Counter2"/>
+                <TopNavBar logo={logo} title="Welcome to the reactive clones" /> <br />
+                <Mounter mountaineer={<Counter />} mountaineerID="Counter"></Mounter>
+                <MounterLink mountaineer={<Counter />} mountaineerID="CounterLink" mountaineerLinkID="CounterLinkID" mountaineerText="Mount Counter" />
+                <MounterLink mountaineer={<Counter />} mountaineerID="CounterLink2" mountaineerLinkID="CounterLinkID2" mountaineerText="Mount Counter2" />
             </div>
         );
     }

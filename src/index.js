@@ -1,8 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// eslint-disable-next-line
+const resetStyle = {
+    body: {
+        "margin": 0,
+        "padding": 0,
+        "font-family": "sans-serif"
+    }
+}
+
+ReactDOM.render( < App / > , document.getElementById('root'));
 registerServiceWorker();

@@ -14,29 +14,29 @@ class Counter extends Component {
     }
 
     increase = () => {
-        this.setState({number: this.state.number + 1});
+        this.setState({ number: this.state.number + 1 });
     }
 
-    decrease(){
-        this.setState({number: this.state.number - 1})
+    decrease() {
+        this.setState({ number: this.state.number - 1 })
     }
 
     blinkRed = () => {
-        this.setState({blink: "alert alert-danger"});
+        this.setState({ blink: "alert alert-danger" });
     }
 
     blinkNormal = () => {
-        this.setState({blink: "alert alert-info"});
+        this.setState({ blink: "alert alert-info" });
     }
-    
+
     render() {
         return (
             <div>
-                <p  className={this.state.blink} >
+                <p className={this.state.blink} >
                     {this.state.number}
                 </p>
-                <input type="button" value="+" onClick={this.increase} onMouseDown={this.blinkRed} onMouseUp={this.blinkNormal}/>
-                <input type="button" value="-" onClick={this.decrease} onMouseDown={this.blinkRed} onMouseUp={this.blinkNormal}/>
+                <input type="button" value="+" onClick={this.increase} onMouseDown={this.blinkRed} onMouseUp={this.blinkNormal} />
+                <input type="button" value="-" onClick={this.decrease} onMouseDown={this.blinkRed} onMouseUp={this.blinkNormal} />
             </div>
         );
     }

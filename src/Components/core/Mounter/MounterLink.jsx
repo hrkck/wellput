@@ -19,12 +19,12 @@ class MounterLink extends Component {
     }
 
     toggleMount = () => {
-        if(this.state.mounted){
+        if (this.state.mounted) {
             ReactDOM.unmountComponentAtNode(document.getElementById(this.props.mountaineerID));
-            this.setState({mounted: !this.state.mounted})
-        }else{
+            this.setState({ mounted: !this.state.mounted })
+        } else {
             ReactDOM.render(this.props.mountaineer, document.getElementById(this.props.mountaineerID));
-            this.setState({mounted: !this.state.mounted})
+            this.setState({ mounted: !this.state.mounted })
         }
     }
 
