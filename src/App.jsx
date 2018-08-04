@@ -8,22 +8,22 @@ class App extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12 col-md-2">
-                            <Link to="reacted/">Home</Link>
+                            <Link to="/">Home</Link>
                         </div>
                         <div className="col-lg-12 col-md-2">
-                            <Link to="reacted/about">About</Link>
+                            <Link to="/about">About</Link>
                         </div>
                         <div className="col-lg-12 col-md-2">
-                            <Link to="reacted/topics">Topics</Link>
+                            <Link to="/topics">Topics</Link>
                         </div>
                     </div>
                 </div>
 
                 <hr/>
                 <Switch>
-                    <Route exact path="reacted/" component={Home}/>
-                    <Route path="reacted/about" component={About}/>
-                    <Route path="reacted/topics" component={Topics}/>
+                    <Route exact path="/" component={Home}/>
+                    <Route path="/about" component={About}/>
+                    <Route path="/topics" component={Topics}/>
                     <Route component={NotFound}/>
                 </Switch>
             </div>
