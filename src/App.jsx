@@ -1,8 +1,8 @@
 import React, {Component} from "react";
 import {Route, Link, Switch} from "react-router-dom";
 
-import "bootstrap/dist/css/bootstrap.css";
-import "./App.css";
+import "style/bootstrap.css";
+import "style/App.css";
 
 class App extends Component {
     render() {
