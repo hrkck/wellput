@@ -5,7 +5,6 @@ import MounterLink from './Components/core/Mounter/MounterLink';
 import Counter from './Components/test/Counter/Counter';
 
 import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap/dist/js/bootstrap.js";
 import "./App.css";
         
 
