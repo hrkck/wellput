@@ -8,6 +8,6 @@ import "./style/App.css";
 
 it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<Router basename={process.env.PUBLIC_URL}><App /></Router> , div);
+    ReactDOM.render(<Router basename="/reacted"><App /></Router> , div);
     ReactDOM.unmountComponentAtNode(div);
 });
