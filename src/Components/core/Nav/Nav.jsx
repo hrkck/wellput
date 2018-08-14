@@ -18,11 +18,11 @@ const SubNav = (props) => (
         </div>
 
         <Switch>
-            <Route exact path={props.url} render={() => <h3>{props.content}</h3>}/>
+            <Route exact path={props.url} render={() => <h3>{props.defaultContent}</h3>}/>
             {props
                 .navList
                 .map(l => 
-                    <Route path={`${props.url}/${l.url}`} component={l.component}/>
+                    <Route path={`${props.url}/${l.url}`} render={l.component}/>
             )}
             <Route path={`${props.url}/:NotFound`} component={NotFound}/>
         </Switch>

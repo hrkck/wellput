@@ -3,7 +3,7 @@ import {Route, Link, Switch} from "react-router-dom";
 
 import Home from './Content/MainPages/Home';
 import About from './Content/MainPages/About';
-import SubNav from './Components/core/Nav/SubNav';
+import SubNav from './Components/core/Nav/Nav';
 import { NotFound } from './Components/core/NotFound/Page404';
 import { topicsList } from './Content/Topics/Topics';
 
@@ -30,7 +30,7 @@ class App extends Component {
                     <Route exact path="/" component={Home}/>
                     <Route path="/about" component={About}/>
                     <Route path="/topics" render={() => 
-                        <SubNav title="Topics Title" url="/topics" navList={topicsList} content="Topics Content"/>
+                        <SubNav title="Topics Title" url="/topics" navList={topicsList} defaultContent="Topics Content"/>
                     }/>
                     <Route component={NotFound}/>
                 </Switch>
