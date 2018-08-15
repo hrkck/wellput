@@ -1,40 +1,37 @@
 import React, {Component} from "react";
 import {Route, Link, Switch} from "react-router-dom";
 
-import Home from './Content/MainPages/Home';
-import About from './Content/MainPages/About';
-import SubNav from './Components/core/Nav/Nav';
+import Home from './Content/Pages/Home';
+import About from './Content/Pages/About';
+import Topics from './Content/Pages/Topics';
+import { pages } from './Content/Pages/Pages';
+import {Nav, SubNav} from './Components/core/Nav/Nav';
 import { NotFound } from './Components/core/NotFound/Page404';
 import { topicsList } from './Content/Topics/Topics';
 
 class App extends Component {
     render() {
         return (
-            <div className="container-fluid">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12 col-md-2">
-                            <Link to="/">Home</Link>
-                        </div>
-                        <div className="col-lg-12 col-md-2">
-                            <Link to="/about">About</Link>
-                        </div>
-                        <div className="col-lg-12 col-md-2">
-                            <Link to="/topics">Topics</Link>
-                        </div>
-                    </div>
-                </div>
+            // <div className="container-fluid">
+            //     <div className="container">
+            //         <div className="row">
+            //             {pages.map(page => (
+            //                 <div className="col-lg-12 col-md-2">
+            //                     <Link to={`/${page.url}`}>{page.title}</Link>
+            //                 </div>
+            //             ))}
+            //         </div>
+            //     </div>
 
-                <hr/>
-                <Switch>
-                    <Route exact path="/" component={Home}/>
-                    <Route path="/about" component={About}/>
-                    <Route path="/topics" render={() => 
-                        <SubNav title="Topics Title" url="/topics" navList={topicsList} defaultContent="Topics Content"/>
-                    }/>
-                    <Route component={NotFound}/>
-                </Switch>
-            </div>
+            //     <hr/>
+            //     <Switch>
+            //         {pages.map(page =>
+            //             <Route exact={page.exact} path={`/${page.url}`} component={page.component}/>
+            //         )}
+            //         <Route component={NotFound}/>
+            //     </Switch>
+            // </div>
+            <Nav pages={pages}/>
         );
     }
 }

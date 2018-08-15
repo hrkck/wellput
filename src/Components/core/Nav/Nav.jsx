@@ -2,7 +2,7 @@ import React from "react";
 import {Link, Route, Switch} from 'react-router-dom';
 import { NotFound } from '../NotFound/Page404';
 
-const SubNav = (props) => (
+export const SubNav = (props) => (
     <div>
         {/* Beginning of sub navigation */}
         <div className="container-fluid">
@@ -29,4 +29,25 @@ const SubNav = (props) => (
     </div>
 );
 
-export default SubNav;
+
+export const Nav = (props) => (
+    <div className="container-fluid">
+        <div className="container">
+            <div className="row">
+                {props.pages.map(page => (
+                    <div className="col-lg-12 col-md-2">
+                        <Link to={`/${page.url}`}>{page.title}</Link>
+                    </div>
+                ))}
+            </div>
+        </div>
+
+        <hr/>
+        <Switch>
+            {props.pages.map(page =>
+                <Route exact={page.exact} path={`/${page.url}`} component={page.component}/>
+            )}
+            <Route path={`/:NotFound`} component={NotFound}/>
+        </Switch>
+    </div>
+);
