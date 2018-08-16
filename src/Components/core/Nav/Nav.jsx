@@ -41,9 +41,9 @@ export const SubNav = (props) => (
                     ))}
             </div>
         </div>
-
+        <br/>
         <Switch>
-            <Route exact path={props.url} component={props.defaultComponent}/> 
+            <Route exact path={props.url} component={props.defaultComponent}/>
             {props
                 .navList
                 .map(l => <Route path={`${props.url}/${l.url}`} render={l.component}/>)}
