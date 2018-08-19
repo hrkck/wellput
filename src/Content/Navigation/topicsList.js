@@ -1,4 +1,5 @@
 import {defaultComponent, comp1, comp2, comp3} from '../Topics/Topics';
+import {NotFound} from '../../Components/core/NotFound/Page404';
 
 export const topicsList = [
     {
@@ -13,6 +14,10 @@ export const topicsList = [
         title: "Post 3",
         url: "post-3",
         component: comp3
+    }, {
+        title: "Not Found",
+        url: ":NotFound",
+        component: NotFound
     }
 ];
 

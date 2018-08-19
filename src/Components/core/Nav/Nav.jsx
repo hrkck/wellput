@@ -1,6 +1,5 @@
 import React from "react";
 import {Link, Route, Switch} from 'react-router-dom';
-import {NotFound} from '../NotFound/Page404';
 
 export const Nav = (props) => {
 
@@ -8,7 +7,11 @@ export const Nav = (props) => {
         .navList
         .map(l => (
             <div className="col-lg-12 col-md-2">
-                <Link to={`/${l.url}`}>{l.title}</Link>
+                {
+                    l.url === ":NotFound"
+                    ? null
+                    : <Link to={`/${l.url}`}>{l.title}</Link>
+                }
             </div>
         ))
 
@@ -23,12 +26,9 @@ export const Nav = (props) => {
                     {navLinkArray}
                 </div>
             </div>
-
             <hr/>
-
             <Switch>
                 {navRouteArray}
-                <Route path={`/:NotFound`} component={NotFound}/>
             </Switch>
         </div>
     );
@@ -40,7 +40,11 @@ export const SubNav = (props) => {
         .navList
         .map(l => (
             <div className="col-lg-12 col-md-2">
-                <Link className="col-lg-12" to={`${props.url}/${l.url}`}>{l.title}</Link>
+                {
+                    l.url === ":NotFound"
+                    ? null
+                    : <Link className="col-lg-12" to={`${props.url}/${l.url}`}>{l.title}</Link>
+                }
             </div>
         ))
 
@@ -56,11 +60,10 @@ export const SubNav = (props) => {
                     {subNavLinkArray}
                 </div>
             </div>
-            <br/>
+            <hr/>
             <Switch>
                 <Route exact path={props.url} component={props.defaultComponent}/> 
                 {subNavRouteArray}
-                <Route path={`${props.url}/:NotFound`} component={NotFound}/>
             </Switch>
         </div>
     );
