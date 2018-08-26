@@ -8,7 +8,7 @@ const About = () => {
             <h2>About</h2>
 
             <p></p>
-            <SubNav title="English and German CV" url="/about" navList={cvList} />
+            <SubNav title="English and German CV" baseUrl="/about" navList={cvList} />
 
         </div>
     )

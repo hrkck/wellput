@@ -5,7 +5,7 @@ import {SubNav} from '../../Components/core/Nav/Nav';
 const Topics = () => {
     return (<SubNav
         title="Topics Title"
-        url="/topics"
+        baseUrl="/topics"
         navList={topicsList}
         defaultComponent={defaultComponent}/>);
 };
