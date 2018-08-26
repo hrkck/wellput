@@ -1,50 +1,59 @@
 import React from "react";
 import {Link, Route, Switch} from 'react-router-dom';
 
-export const Nav = (props) => {
+const ACTIVE_LINK_CLASS = "nav-link active";
+const INACTIVE_LINK_CLASS = "nav-link";
 
-    const navLinkArray = props
-        .navList
-        .map(l => (
-            <div className="col-lg-12 col-md-2">
-                {
-                    l.url === ":NotFound"
-                    ? null
-                    : <Link to={`/${l.url}`}>{l.title}</Link>
-                }
-            </div>
-        ))
+export const Nav = ({navList}) => {
 
-    const navRouteArray = props
-        .navList
-        .map(l => <Route exact={l.exact} path={`/${l.url}`} component={l.component}/>)
+    const url = window.location.href;
+
+    const navLinkArray = navList.map(l => (
+        <div className="nav-item">
+            {l.url === ":NotFound"
+                ? null
+                : <Link
+                    className={url.substring(url.lastIndexOf("/") + 1) === l.url
+                    ? ACTIVE_LINK_CLASS
+                    : INACTIVE_LINK_CLASS}
+                    to={`/${l.url}`}>{l.title}</Link>
+}
+        </div>
+    ))
+
+    const navRouteArray = navList.map(l => <Route exact={l.exact} path={`/${l.url}`} component={l.component}/>)
 
     return (
         <div className="container-fluid">
-            <div className="container">
-                <div className="row">
-                    {navLinkArray}
-                </div>
+            <div className="nav nav-pills py-2">
+                {navLinkArray}
             </div>
             <hr/>
-            <Switch>
-                {navRouteArray}
-            </Switch>
+            <div className="container px-2 py-3 shadow">
+                <Switch>
+                    {navRouteArray}
+                </Switch>
+            </div>
         </div>
     );
 }
 
 export const SubNav = (props) => {
 
+    const url = window.location.href;
+
     const subNavLinkArray = props
         .navList
         .map(l => (
-            <div className="col-lg-12 col-md-2">
-                {
-                    l.url === ":NotFound"
+            <div className="nav-item">
+                {l.url === ":NotFound"
                     ? null
-                    : <Link className="col-lg-12" to={`${props.url}/${l.url}`}>{l.title}</Link>
-                }
+                    : <Link
+                        className={url.substring(url.lastIndexOf("/") + 1) === l.url
+                        ? ACTIVE_LINK_CLASS
+                        : INACTIVE_LINK_CLASS}
+                        to={`${props.url}/${l.url}`}>{l.title}</Link>
+}
             </div>
         ))
 
@@ -56,13 +65,13 @@ export const SubNav = (props) => {
         <div>
             <div className="container-fluid">
                 <h2>{props.title}</h2>
-                <div className="row">
+                <div className="nav nav-pills flex-column py-2 col-2">
                     {subNavLinkArray}
                 </div>
             </div>
             <hr/>
             <Switch>
-                <Route exact path={props.url} component={props.defaultComponent}/> 
+                <Route exact path={props.url} component={props.defaultComponent}></Route>
                 {subNavRouteArray}
             </Switch>
         </div>
