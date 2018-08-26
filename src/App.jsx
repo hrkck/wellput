@@ -5,7 +5,11 @@ import {Nav} from './Components/core/Nav/Nav';
 
 export default class App extends Component {
     render() {
-        return (<Nav navList={pagesList}/>);
+        return (
+            <div>
+                <Nav navList={pagesList}/>
+            </div>
+        );
     }
 }
 
