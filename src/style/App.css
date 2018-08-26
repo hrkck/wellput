@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Jura");
+body {
+  background: #c3ffb0;
+  background: linear-gradient(90deg, rgba(195, 255, 176, 0.763725) 0%, #104c6e 100%);
+  font-family: 'Jura', sans-serif; }
+
 .spin {
   animation: App-logo-spin infinite 20s linear; }
 
