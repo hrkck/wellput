@@ -40,3 +40,11 @@ That way it all worked.
 NOTE: This comment should later be documented in a better medium.
 For future: There are some other important insights/concepts/tricks about deploying websites on GitHub with React ecosystem. Would be, like, awesome if I can document them as well.
 */
+
+/**
+ * UPDATE:
+ * in order to handle hard refreshes and manual address changes,
+ * I applied the tricks described below:
+ * https://github.com/rafrex/spa-github-pages
+ * 
+ */
