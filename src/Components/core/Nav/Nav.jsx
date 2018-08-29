@@ -38,7 +38,7 @@ export const Nav = ({navList}) => {
                 {navLinkArray}
             </div>
             <hr/>
-            <div className="container px-2 py-3 shadow">
+            <div className="container px-2 py-3 shadow" style={{minHeight: "90vh"}}>
                 <Switch>
                     {navRouteArray}
                 </Switch>
@@ -65,7 +65,7 @@ export const SubNav = ({navList, baseUrl, title, defaultComponent}) => {
 
     return (
         <div className="row">
-            <div className="col-4">
+            <div className="col-sm-12 col-lg-4">
                 <h2>{title}</h2>
                 <div className="nav nav-pills flex-column py-2 col-6">
                     {url === baseUrl
@@ -75,7 +75,7 @@ export const SubNav = ({navList, baseUrl, title, defaultComponent}) => {
                         </NavItem>}
                 </div>
             </div>
-            <div className="col-8 pt-3">
+            <div className="col-sm-12 col-lg-8 pt-3" style={{minHeight: "90vh"}}>
                 <Switch>
                     {url === baseUrl
                         ? <Route exact path={baseUrl} component={defaultComponent}></Route>
