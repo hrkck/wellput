@@ -1,87 +1,77 @@
 import React from "react";
 import {Link, Route, Switch} from 'react-router-dom';
 
-const ACTIVE_LINK_CLASS = "nav-link active";
-const INACTIVE_LINK_CLASS = "nav-link";
+const ACTIVE = "nav-link active";
+const INACTIVE = "nav-link";
 
-const NavItem = props => {
-    return (
-        <div class="nav-item">
-            {props.children}
-        </div>
-    )
-}
+const MyLink = ({url, l_url, to, title}) => <Link className={url===l_url ? ACTIVE : INACTIVE} to={to}>{title}</Link>
+        // if both url and l_url props are not defined, default value
+        // of the ternary op is `ACTIVE`
 
-export const Nav = ({navList}) => {
-
+export const Navigation = ({navList}) => {
     let url = window.location.href;
     url = url.substring(url.lastIndexOf("/") + 1); // cut the word after the last `/`
 
-    const navLinkArray = navList.map(l => (
-        <NavItem>
+    const linkArray = navList.map(l =>
+        <div class="nav-item">
             {l.url === ":NotFound"
                 ? null
-                : <Link
-                    className={url === l.url
-                    ? ACTIVE_LINK_CLASS
-                    : INACTIVE_LINK_CLASS}
-                    to={`/${l.url}`}>{l.title}</Link>
-}
-        </NavItem>
-    ))
-
-    const navRouteArray = navList.map(l => <Route exact={l.exact} path={`/${l.url}`} component={l.component}/>)
-
+                : <MyLink url={url} l_url={l.url} to={`/${l.url}`} title={l.title}/>
+            }
+        </div>
+    )
+    
     return (
-        <div className="container-fluid">
-            <div className="nav nav-pills py-2">
-                {navLinkArray}
-            </div>
-            <hr/>
-            <div className="container px-2 py-3 shadow" style={{minHeight: "90vh"}}>
-                <Switch>
-                    {navRouteArray}
-                </Switch>
-            </div>
+        <div className="nav nav-pills py-2 px-3">
+            {linkArray}
         </div>
     );
 }
 
-export const SubNav = ({navList, baseUrl, title, defaultComponent}) => {
+export const Pages = ({pagesList}) => {
+    const routeArray = pagesList.map(l => <Route exact={l.exact} path={`/${l.url}`} component={l.component}/>)
 
+    return (
+        <Switch>
+            {routeArray}
+        </Switch>
+    )
+}
+
+export const SubNavigation = ({navList, baseUrl, title}) => {
     let url = window.location.href;
     url = url.substring(url.lastIndexOf("/")); // cut the word after the last `/`
 
-    const subNavLinkArray = navList.map(l => (
-        <NavItem>
+    const linkArray = navList.map(l => 
+        <div className="nav-item">
             {l.url === ":NotFound"
                 ? null
-                : <Link className={INACTIVE_LINK_CLASS} to={`${baseUrl}/${l.url}`}>{l.title}</Link>
-}
-        </NavItem>
-    ))
-
-    const subNavRouteArray = navList.map(l => <Route path={`${baseUrl}/${l.url}`} render={l.component}/>)
+                : <MyLink url={url} to={`${baseUrl}/${l.url}`} title={l.title} />
+            }
+        </div>
+    )
 
     return (
-        <div className="row">
-            <div className="col-sm-12 col-lg-4">
-                <h2>{title}</h2>
-                <div className="nav nav-pills flex-column py-2 col-6">
-                    {url === baseUrl
-                        ? subNavLinkArray
-                        : <NavItem>
-                            <Link className={ACTIVE_LINK_CLASS} to={`${baseUrl}`}>go back</Link>
-                        </NavItem>}
-                </div>
-            </div>
-            <div className="col-sm-12 col-lg-8 pt-3" style={{minHeight: "90vh"}}>
-                <Switch>
-                    {url === baseUrl
-                        ? <Route exact path={baseUrl} component={defaultComponent}></Route>
-                        : subNavRouteArray}
-                </Switch>
-            </div>
+        <div className="nav-pills flex-column col-12 col-md-3 shadow">
+            <h2>{title}</h2>
+            {url === baseUrl
+                ? linkArray
+                : <div className="nav-item">
+                    <MyLink to={`${baseUrl}`} title="go back" />
+                </div>}
         </div>
     );
+}
+
+export const SubPages = ({pagesList, baseUrl, render}) => {
+    const routeArray = pagesList.map(l => <Route path={`${baseUrl}/${l.url}`} render={l.component}/>)
+
+    return(
+        <div className="col-12 col-md-9 px-5 w-75 shadow" >
+            <Switch>
+                {routeArray}
+                <Route path={`${baseUrl}`} render={render}/>
+            </Switch>
+        </div>
+    )
 }

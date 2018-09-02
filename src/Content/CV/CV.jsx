@@ -9,6 +9,6 @@ export const englishCV = () => {
 
 export const germanCV = () => {
     return (
-        <iframe className="" title="deutsch-cv" src={require("./assets/cv-hakkirizakucuk-deutsch.pdf")}/>
+        <iframe className="cv" title="deutsch-cv" src={require("./assets/cv-hakkirizakucuk-deutsch.pdf")}/>
     )
 }

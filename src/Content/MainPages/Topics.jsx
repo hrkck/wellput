@@ -1,13 +1,19 @@
 import React from 'react';
-import defaultComponent, {topicsList} from '../Navigation/topicsList';
-import {SubNav} from '../../Components/core/Nav/Nav';
+import {topicsList} from '../Navigation/topicsList';
+import {SubNavigation, SubPages} from '../../Components/core/Nav/Nav';
+
+import Page from '../../Components/core/Page/Page';
 
 const Topics = () => {
-    return (<SubNav
-        title="Topics Title"
-        baseUrl="/topics"
-        navList={topicsList}
-        defaultComponent={defaultComponent}/>);
+    return (
+        <Page>
+            <SubNavigation
+                title="Topics Title"
+                baseUrl="/topics"
+                navList={topicsList}/>
+            <SubPages baseUrl="/topics" pagesList={topicsList} />
+        </Page>
+    );
 };
 
 export default Topics;

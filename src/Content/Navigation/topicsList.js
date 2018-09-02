@@ -1,12 +1,32 @@
-import {defaultComponent, comp1, comp2, comp3} from '../Topics/Topics';
+import {comp1, comp2, comp3} from '../Topics/Topics';
 import {NotFound} from '../../Components/core/NotFound/Page404';
 
 export const topicsList = [
     {
-        title: "Post 1",
+        title: "PostPost PostPostPost PostPostPost Post 1",
         url: "post-1",
         component: comp1
     }, {
+        title: "Post 2",
+        url: "post-2",
+        component: comp2
+    },{
+        title: "Post 2",
+        url: "post-2",
+        component: comp2
+    },{
+        title: "Post 2",
+        url: "post-2",
+        component: comp2
+    },{
+        title: "Post 2",
+        url: "post-2",
+        component: comp2
+    },{
+        title: "Post 2",
+        url: "post-2",
+        component: comp2
+    },{
         title: "Post 2",
         url: "post-2",
         component: comp2
@@ -20,5 +40,3 @@ export const topicsList = [
         component: NotFound
     }
 ];
-
-export default defaultComponent;
