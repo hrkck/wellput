@@ -3,34 +3,16 @@ import {NotFound} from '../../Components/core/NotFound/Page404';
 
 export const topicsList = [
     {
-        title: "PostPost PostPostPost PostPostPost Post 1",
+        title: "Post 1",
         url: "post-1",
         component: comp1
-    }, {
+    },
+    {
         title: "Post 2",
         url: "post-2",
         component: comp2
-    },{
-        title: "Post 2",
-        url: "post-2",
-        component: comp2
-    },{
-        title: "Post 2",
-        url: "post-2",
-        component: comp2
-    },{
-        title: "Post 2",
-        url: "post-2",
-        component: comp2
-    },{
-        title: "Post 2",
-        url: "post-2",
-        component: comp2
-    },{
-        title: "Post 2",
-        url: "post-2",
-        component: comp2
-    }, {
+    },
+    {
         title: "Post 3",
         url: "post-3",
         component: comp3

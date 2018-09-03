@@ -1,15 +1,15 @@
 import React, {Component} from "react";
 
 import {pagesList} from './Content/Navigation/pagesList';
-import {Navigation} from './Components/core/Nav/Nav';
-import {Pages} from './Components/core/Nav/Nav';
+import {Navigation} from './Components/core/Navigation/Nav';
+import {Routes} from './Components/core/Routes/Routes';
 export default class App extends Component {
     render() {
         return (
             <div>
                 <Navigation navList={pagesList}/>
                 <hr/>
-                <Pages pagesList={pagesList}/>
+                <Routes pagesList={pagesList}/>
             </div>
         );
     }

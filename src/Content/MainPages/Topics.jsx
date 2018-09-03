@@ -1,17 +1,23 @@
 import React from 'react';
 import {topicsList} from '../Navigation/topicsList';
-import {SubNavigation, SubPages} from '../../Components/core/Nav/Nav';
+import {SubNavigation, SubNav} from '../../Components/core/Navigation/Nav';
+import {SubRoutes} from '../../Components/core/Routes/Routes';
 
 import Page from '../../Components/core/Page/Page';
 
 const Topics = () => {
     return (
         <Page>
-            <SubNavigation
-                title="Topics Title"
-                baseUrl="/topics"
-                navList={topicsList}/>
-            <SubPages baseUrl="/topics" pagesList={topicsList} />
+            <SubNavigation baseUrl="/topics">
+                <SubNav title="Topics Title" navList={topicsList}/>
+            </SubNavigation>
+            <SubRoutes baseUrl="/topics" pagesList={topicsList} render={()=>{
+                return(
+                    <div>
+                        <h2>Default topics page</h2>
+                    </div>
+                )
+            }} />
         </Page>
     );
 };

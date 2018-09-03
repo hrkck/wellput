@@ -3,12 +3,12 @@ import './assets/CV.css';
 
 export const englishCV = () => {
     return (
-        <iframe className="cv" title="english-cv" src={require("./assets/cv-hakkirizakucuk-english.pdf")}/>
+        <iframe className="embed-responsive" title="english-cv" src={require("./assets/cv-hakkirizakucuk-english.pdf")}/>
     )
 }
 
 export const germanCV = () => {
     return (
-        <iframe className="cv" title="deutsch-cv" src={require("./assets/cv-hakkirizakucuk-deutsch.pdf")}/>
+        <iframe className="embed-responsive" title="deutsch-cv" src={require("./assets/cv-hakkirizakucuk-deutsch.pdf")}/>
     )
 }
