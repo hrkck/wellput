@@ -38,7 +38,7 @@ export const Pages = ({pagesList}) => {
     )
 }
 
-export const SubNavigation = ({navList, baseUrl, title}) => {
+export const SubNavChildren = ({navList, title, baseUrl}) => {
     let url = window.location.href;
     url = url.substring(url.lastIndexOf("/")); // cut the word after the last `/`
 
@@ -51,14 +51,24 @@ export const SubNavigation = ({navList, baseUrl, title}) => {
         </div>
     )
 
-    return (
-        <div className="nav-pills flex-column col-12 col-md-3 py-3 shadow" style={{borderRadius: "25px"}}>
+    return(
+        <div>
             <h2>{title}</h2>
             {url === baseUrl
                 ? linkArray
-                : <div className="nav-item">
-                    <MyLink to={`${baseUrl}`} title="go back" />
-                </div>}
+                :   <div className="nav-item">
+                        <MyLink to={`${baseUrl}`} title="go back" />
+                    </div>
+            }
+            <hr/>
+        </div>
+    )
+}
+
+export const SubNavigation = ({children, baseUrl}) => {
+    return (
+        <div className="nav-pills flex-column col-12 col-md-3 py-3 shadow" style={{borderRadius: "25px"}}>
+            {React.Children.map(children, child => React.cloneElement(child, {baseUrl: baseUrl}))}
         </div>
     );
 }
