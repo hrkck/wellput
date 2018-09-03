@@ -52,7 +52,7 @@ export const SubNavigation = ({navList, baseUrl, title}) => {
     )
 
     return (
-        <div className="nav-pills flex-column col-12 col-md-3 shadow">
+        <div className="nav-pills flex-column col-12 col-md-3 py-3 shadow" style={{borderRadius: "25px"}}>
             <h2>{title}</h2>
             {url === baseUrl
                 ? linkArray
@@ -67,7 +67,7 @@ export const SubPages = ({pagesList, baseUrl, render}) => {
     const routeArray = pagesList.map(l => <Route path={`${baseUrl}/${l.url}`} render={l.component}/>)
 
     return(
-        <div className="col-12 col-md-9 px-5 w-75 shadow" >
+        <div className="col-12 col-md-9 px-5 w-75">
             <Switch>
                 {routeArray}
                 <Route path={`${baseUrl}`} render={render}/>
