@@ -22,7 +22,7 @@ export const Navigation = ({navList}) => {
     )
     
     return (
-        <div className="nav nav-pills py-2 px-3">
+        <div className="container nav nav-pills py-2 px-3">
             {linkArray}
         </div>
     );
