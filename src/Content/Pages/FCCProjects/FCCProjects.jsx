@@ -1,20 +1,20 @@
 import React from 'react';
-import {topicsList} from '../../Navigation/topicsList';
+import {projectsList} from '../../Navigation/FCCProjects';
 import {SubNavigation, SubNav} from '../../../Components/core/Navigation/Nav';
 import {SubRoutes} from '../../../Components/core/Routes/Routes';
 
 import Page from '../../../Components/core/Page/Page';
 
-const Topics = () => {
+const FCCProjects = () => {
     return (
         <Page>
-            <SubNavigation baseUrl="/topics">
-                <SubNav title="Topics Title" navList={topicsList}/>
+            <SubNavigation baseUrl="/FCCProjects">
+                <SubNav title="Projects List" navList={projectsList}/>
             </SubNavigation>
-            <SubRoutes baseUrl="/topics" pagesList={topicsList} render={()=>{
+            <SubRoutes baseUrl="/FCCProjects" pagesList={projectsList} render={()=>{
                 return(
                     <div>
-                        <h2>Default topics page</h2>
+                        <h2>FCC Projects</h2>
                     </div>
                 )
             }} />
@@ -22,4 +22,4 @@ const Topics = () => {
     );
 };
 
-export default Topics;
+export default FCCProjects;
