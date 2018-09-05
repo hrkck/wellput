@@ -1,4 +1,4 @@
-import {comp1, comp2, comp3} from '../Topics/Topics';
+import {comp1, comp2, comp3} from '../Pages/Topics/Topics/Topics';
 import {NotFound} from '../../Components/core/NotFound/Page404';
 
 export const topicsList = [

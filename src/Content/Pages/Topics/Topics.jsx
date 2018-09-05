@@ -1,9 +1,9 @@
 import React from 'react';
-import {topicsList} from '../Navigation/topicsList';
-import {SubNavigation, SubNav} from '../../Components/core/Navigation/Nav';
-import {SubRoutes} from '../../Components/core/Routes/Routes';
+import {topicsList} from '../../Navigation/topicsList';
+import {SubNavigation, SubNav} from '../../../Components/core/Navigation/Nav';
+import {SubRoutes} from '../../../Components/core/Routes/Routes';
 
-import Page from '../../Components/core/Page/Page';
+import Page from '../../../Components/core/Page/Page';
 
 const Topics = () => {
     return (
