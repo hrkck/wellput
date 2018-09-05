@@ -1,6 +1,6 @@
-import Home from '../MainPages/Home';
-import About from '../MainPages/About';
-import Topics from "../MainPages/Topics";
+import Home from '../Pages/Home/Home';
+import About from '../Pages/About/About';
+import Topics from "../Pages/Topics/Topics";
 import {NotFound} from '../../Components/core/NotFound/Page404';
 
 

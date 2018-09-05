@@ -1,10 +1,10 @@
 import React from 'react';
 
-import {cvList} from '../Navigation/cvList';
-import {SubNavigation, SubNav} from '../../Components/core/Navigation/Nav';
-import {SubRoutes} from '../../Components/core/Routes/Routes';
+import {cvList} from '../../Navigation/cvList';
+import {SubNavigation, SubNav} from '../../../Components/core/Navigation/Nav';
+import {SubRoutes} from '../../../Components/core/Routes/Routes';
 
-import Page from '../../Components/core/Page/Page';
+import Page from '../../../Components/core/Page/Page';
 
 
 const About = () => {
