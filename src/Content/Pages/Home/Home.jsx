@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Page from '../../../Components/core/Page/Page';
+import Page from '../../../Components/Page/Page';
 
 const Home = () => (
     <Page>

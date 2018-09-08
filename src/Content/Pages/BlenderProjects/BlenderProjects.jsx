@@ -1,9 +1,9 @@
 import React from 'react';
-import {projectsList} from '../../Navigation/BlenderProjects';
-import {SubNavigation, SubNav} from '../../../Components/core/Navigation/Nav';
-import {SubRoutes} from '../../../Components/core/Routes/Routes';
+import {blenderProjects} from '../../Navigation/BlenderProjects/blenderProjects';
+import {SubNavigation, SubNav} from '../../../Components/Navigation/Nav';
+import {SubRoutes} from '../../../Components/Routes/SubRoutes';
 
-import Page from '../../../Components/core/Page/Page';
+import Page from '../../../Components/Page/Page';
 
 import './assets/blenderProjects.css';
 
@@ -26,9 +26,9 @@ const BlenderProjects = () => {
     return (
         <Page>
             <SubNavigation baseUrl="/BlenderProjects">
-                <SubNav title="Currently, there is nothing to navigate! :)" navList={projectsList}/>
+                <SubNav title="Currently, there is nothing to navigate! :)" navList={blenderProjects}/>
             </SubNavigation>
-            <SubRoutes baseUrl="/BlenderProjects" pagesList={projectsList} render={()=>{
+            <SubRoutes baseUrl="/BlenderProjects" pagesList={blenderProjects} render={()=>{
                 return(
                     <div className="text-center">
                         <h2>Blender Projects - 2018</h2>

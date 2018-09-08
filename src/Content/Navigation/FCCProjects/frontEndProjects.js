@@ -1,7 +1,7 @@
-import {Portfolio, TechnicalDocumentationPage, ProductLandingPage, SurveyForm, TributePage} from '../Pages/FCCProjects/Projects/Projects';
-import {NotFound} from '../../Components/core/NotFound/Page404';
+import {Portfolio, TechnicalDocumentationPage, ProductLandingPage, SurveyForm, TributePage} from '../../Pages/FCCProjects/Projects/Projects';
+import {NotFound} from '../../../Components/NotFound/Page404';
 
-export const projectsList = [
+export const frontEndProjects = [
     {
         title: "Portfolio",
         url: "Portfolio",

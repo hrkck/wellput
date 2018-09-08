@@ -1,17 +1,17 @@
 import React from 'react';
-import {projectsList} from '../../Navigation/FCCProjects';
-import {SubNavigation, SubNav} from '../../../Components/core/Navigation/Nav';
-import {SubRoutes} from '../../../Components/core/Routes/Routes';
+import {frontEndProjects} from '../../Navigation/FCCProjects/frontEndProjects';
+import {SubNavigation, SubNav} from '../../../Components/Navigation/SubNav';
+import {SubRoutes} from '../../../Components/Routes/SubRoutes';
 
-import Page from '../../../Components/core/Page/Page';
+import Page from '../../../Components/Page/Page';
 
 const FCCProjects = () => {
     return (
         <Page>
             <SubNavigation baseUrl="/FCCProjects">
-                <SubNav title="Projects List" navList={projectsList}/>
+                <SubNav title="Projects List" navList={frontEndProjects}/>
             </SubNavigation>
-            <SubRoutes baseUrl="/FCCProjects" pagesList={projectsList} render={()=>{
+            <SubRoutes baseUrl="/FCCProjects" pagesList={frontEndProjects} render={()=>{
                 return(
                     <div>
                         <h2>FCC Projects</h2>

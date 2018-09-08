@@ -1,5 +1,5 @@
-import {englishCV, germanCV} from '../Pages/About/CV/CV';
-import {NotFound} from '../../Components/core/NotFound/Page404';
+import {englishCV, germanCV} from '../../Pages/About/CV/CV';
+import {NotFound} from '../../../Components/NotFound/Page404';
 
 export const cvList = [
     {
