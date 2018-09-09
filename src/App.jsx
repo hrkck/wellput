@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 
-import {mainPages} from './Content/Navigation/MainPages/mainPages';
+import {mainNav} from './Content/Navigation/mainNav';
 import {Navigation} from './Components/Navigation/Nav';
 import {Routes} from './Components/Routes/Routes';
 
@@ -8,9 +8,9 @@ export default class App extends Component {
     render() {
         return (
             <div>
-                <Navigation navList={mainPages}/>
+                <Navigation navList={mainNav}/>
                 <hr/>
-                <Routes pagesList={mainPages}/>
+                <Routes pagesList={mainNav}/>
                 
             </div>
         );

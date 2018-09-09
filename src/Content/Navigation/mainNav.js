@@ -1,14 +1,14 @@
-import Home from '../../Pages/Home/Home';
-import About from '../../Pages/About/About';
-import Projects from "../../Pages/Projects/Projects";
-import TidyUp from "../../Pages/TidyUp/TidyUp";
-import {NotFound} from '../../../Components/NotFound/Page404';
+import Home from '../Pages/Home/Home';
+import About from '../Pages/About/About';
+import Projects from "../Pages/Projects/Projects";
+import TidyUp from "../Pages/TidyUp/TidyUp";
+import {NotFound} from '../../Components/NotFound/Page404';
 
-import {projectsDropDown} from '../Projects/projectsDropDown';
-import {tidyUpDropDown} from "../TidyUp/tidyUpDropDown";
+import {projectsDropDown} from './Projects/projectsDropDown';
+import {tidyUpDropDown} from "./TidyUp/tidyUpDropDown";
 
 
-export const mainPages = [
+export const mainNav = [
     {
         title: "Home",
         exact: true,
