@@ -1,7 +1,9 @@
 import React from 'react';
 
+import Page from '../Page/Page';
+
 export const NotFound = ({match}) => (
-    <div>
+    <Page>
         <h2>Sorry, {match.url} not found! ERROR 404</h2>
-    </div>
+    </Page>
 );
