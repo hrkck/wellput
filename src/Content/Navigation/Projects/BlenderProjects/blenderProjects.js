@@ -1,4 +1,4 @@
-import {NotFound} from '../../../Components/NotFound/Page404';
+import {NotFound} from '../../../../Components/NotFound/Page404';
 
 export const blenderProjects = [
     {

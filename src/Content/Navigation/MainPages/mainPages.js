@@ -1,10 +1,12 @@
 import Home from '../../Pages/Home/Home';
 import About from '../../Pages/About/About';
-import FCCProjects from "../../Pages/FCCProjects/FCCProjects";
-import BlenderProjects from "../../Pages/BlenderProjects/BlenderProjects";
+import Projects from "../../Pages/Projects/Projects";
 import TidyUp from "../../Pages/TidyUp/TidyUp";
-import {tidyUpDropDown} from "../TidyUp/tidyUpDropDown";
 import {NotFound} from '../../../Components/NotFound/Page404';
+
+import {projectsDropDown} from '../Projects/projectsDropDown';
+import {tidyUpDropDown} from "../TidyUp/tidyUpDropDown";
+
 
 export const mainPages = [
     {
@@ -17,13 +19,10 @@ export const mainPages = [
         url: "about",
         component: About
     }, {
-        title: "FCC Projects",
-        url: "FCCProjects",
-        component: FCCProjects
-    }, {
-        title: "Blender Projects",
-        url: "BlenderProjects",
-        component: BlenderProjects
+        title: "Projects",
+        url: "projects",
+        dropDown: projectsDropDown,
+        component: Projects
     }, {
         title: "Tidy Up",
         url: "TidyUp",

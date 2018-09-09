@@ -1,5 +1,5 @@
-import {Portfolio, TechnicalDocumentationPage, ProductLandingPage, SurveyForm, TributePage} from '../../Pages/FCCProjects/Projects/Projects';
-import {NotFound} from '../../../Components/NotFound/Page404';
+import {Portfolio, TechnicalDocumentationPage, ProductLandingPage, SurveyForm, TributePage} from '../../../Pages/Projects/FCCProjects/Projects/Projects';
+import {NotFound} from '../../../../Components/NotFound/Page404';
 
 export const frontEndProjects = [
     {

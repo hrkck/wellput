@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {cvList} from '../../Navigation/About/cvList';
-import {SubNavigation, SubNav} from '../../../Components/Navigation/Nav';
+import {SubNavigation, SubNav} from '../../../Components/Navigation/SubNav';
 import {SubRoutes} from '../../../Components/Routes/SubRoutes';
 
 import Page from '../../../Components/Page/Page';

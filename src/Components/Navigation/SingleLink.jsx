@@ -9,8 +9,8 @@ const SingleLink = ({link_url, to, title, isDropDown = false}) =>{
     url = url.substring(url.lastIndexOf("/") + 1); // cut the word after the last `/`
     
     return  link_url === ":NotFound"
-            ? null
-            : <Link className={`
+           ? null
+           : <Link className={`
                 ${
                     url === link_url 
                     ? "active" 

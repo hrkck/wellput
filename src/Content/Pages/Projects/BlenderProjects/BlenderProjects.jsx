@@ -1,27 +1,24 @@
 import React from 'react';
-import {blenderProjects} from '../../Navigation/BlenderProjects/blenderProjects';
-import {SubNavigation, SubNav} from '../../../Components/Navigation/Nav';
-import {SubRoutes} from '../../../Components/Routes/SubRoutes';
+import {SubNavigation, SubNav} from '../../../../Components/Navigation/SubNav';
+import {SubRoutes} from '../../../../Components/Routes/SubRoutes';
+import Page from '../../../../Components/Page/Page';
 
-import Page from '../../../Components/Page/Page';
-
+import {blenderProjects} from '../../../Navigation/Projects/BlenderProjects/blenderProjects';
 import './assets/blenderProjects.css';
-
-// import images:
 import {imgList} from "./media/imagesList";
 
-const generateImageList = (list) => list.map(l => <img src={l} alt={l} className="img"/>)
+const generateImageList = (list) => list.map(l => <img src={l} alt={l} key={l} className="img"/>)
 
 const BlenderProjects = () => {
     return (
         <Page>
-            <SubNavigation baseUrl="/BlenderProjects">
+            <SubNavigation baseUrl="/projects/BlenderProjects">
                 <SubNav
                     title="Currently, there is nothing to navigate! :)"
                     navList={blenderProjects}/>
             </SubNavigation>
             <SubRoutes
-                baseUrl="/BlenderProjects"
+                baseUrl="/projects/BlenderProjects"
                 pagesList={blenderProjects}
                 render={() => {
                 return (

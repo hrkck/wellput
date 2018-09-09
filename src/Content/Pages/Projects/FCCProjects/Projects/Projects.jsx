@@ -9,10 +9,10 @@ export const Portfolio = () => {
                 scrolling='no'
                 title='FCC_Portfolio'
                 src='//codepen.io/hrkucuk/embed/LBjpZx/result&embed-version=2'
-                allowTransparency='true'
-                allowFullScreen='true'
+                allowtransparency='true'
+                allowFullScreen={true}
                 style={{
-                width: '100%;'
+                width: '100%'
             }}></iframe>
             See the Pen
             <a
@@ -35,10 +35,10 @@ export const TechnicalDocumentationPage = () => {
                 scrolling='no'
                 title='FCC_TechnicalDocumentationPage'
                 src='//codepen.io/hrkucuk/embed/RBVzay/result&embed-version=2'
-                allowTransparency='true'
-                allowFullScreen='true'
+                allowtransparency='true'
+                allowFullScreen={true}
                 style={{
-                width: '100%;'
+                width: '100%'
             }}></iframe>
             See the Pen
             <a
@@ -61,10 +61,10 @@ export const ProductLandingPage = () => {
                 scrolling='no'
                 title='FCC_ProductLandingPage'
                 src='//codepen.io/hrkucuk/embed/ZjKPrB/result&embed-version=2'
-                allowTransparency='true'
-                allowFullScreen='true'
+                allowtransparency='true'
+                allowFullScreen={true}
                 style={{
-                width: '100%;'
+                width: '100%'
             }}></iframe>
             See the Pen
             <a
@@ -87,10 +87,10 @@ export const SurveyForm = () => {
                 scrolling='no'
                 title='FCC_SurveyForm'
                 src='//codepen.io/hrkucuk/embed/qymNXo/result&embed-version=2'
-                allowTransparency='true'
-                allowFullScreen='true'
+                allowtransparency='true'
+                allowFullScreen={true}
                 style={{
-                width: '100%;'
+                width: '100%'
             }}></iframe>
             See the Pen
             <a
@@ -113,10 +113,10 @@ export const TributePage = () => {
                 scrolling='no'
                 title='FCC_TributePage'
                 src='//codepen.io/hrkucuk/embed/QBvwqq/result&embed-version=2'
-                allowTransparency='true'
-                allowFullScreen='true'
+                allowtransparency='true'
+                allowFullScreen={true}
                 style={{
-                width: '100%;'
+                width: '100%'
             }}></iframe>
             See the Pen
             <a

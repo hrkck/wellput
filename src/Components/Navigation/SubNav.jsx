@@ -17,14 +17,13 @@ export const SubNavigation = ({children, baseUrl}) => {
 export const SubNav = ({navList, title, baseUrl}) => {
     let url = window.location.href;
     url = url.substring(url.lastIndexOf("/"));
-
-    const linkArray = generateLinks(navList, baseUrl);
+    let loc = baseUrl.substring(baseUrl.lastIndexOf("/")); // location
 
     return(
         <div>
             <h2>{title}</h2>
-            {url === baseUrl
-                ? linkArray
+            {url === loc
+                ? generateLinks(navList, baseUrl)
                 :   <div className="nav-item">
                         <Link className="nav-link active" to={`${baseUrl}`}>go back</Link>
                     </div>
