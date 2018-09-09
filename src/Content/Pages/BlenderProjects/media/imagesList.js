@@ -31,7 +31,7 @@ import Sword from "./Sword-min.jpg";
 import Yer from "./Yer-min.jpg";
 import Zen from "./Zen-min.jpg";
 
-export const list = [
+export const imgList = [
     x1,
     A12,
     x2,

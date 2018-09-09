@@ -1,8 +1,16 @@
 img{
-    padding: 20px 0px 20px 0px;
-    transition-duration: 500ms;
+    margin: 30px 5px 10px 0;
+    border: solid white;
+    border-radius: 10%;
+    width: 40%;
+    height: auto;
+    transition: width 0.5s;
 }
 
 img:hover{
-    padding: 40px 0px 40px 0px;
+    width: 50%;
+}
+
+h2{
+    opacity: 0.8;
 }
