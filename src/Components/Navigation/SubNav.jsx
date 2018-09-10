@@ -7,7 +7,7 @@ import {generateLinks} from './generateLinks';
 // https://stackoverflow.com/questions/32370994/how-to-pass-props-to-this-props-children#32371612
 export const SubNavigation = ({children, baseUrl}) => {
     return (
-        <div className="nav-pills col-12 col-md-3 py-3 shadow border-radius-4">
+        <div className="nav-pills col-12 col-md-3 py-3 shadow">
             {React.Children.map(children, child => React.cloneElement(child, {baseUrl: baseUrl}))}
         </div>
     );
