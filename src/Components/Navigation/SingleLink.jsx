@@ -13,13 +13,13 @@ const SingleLink = ({link_url, to, title, isDropDown = false}) =>{
            : <Link className={`
                 ${
                     url === link_url 
-                    ? "active" 
-                    : ""
+                    ? "text-success" 
+                    : "text-primary"
                 } 
                 ${ 
                     isDropDown 
                     ? "dropdown-item" 
-                    : "nav-link"
+                    : ""
                 }`} 
                 to={to}
             >{title}</Link>

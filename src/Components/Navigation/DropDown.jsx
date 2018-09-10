@@ -20,13 +20,13 @@ class DropDown extends Component {
 
         return (
             <div className="btn-group border-dark border-bottom">
-                <SingleLink 
+                <SingleLink
                     link_url={link_url}
                     to={`${baseUrl}/${link_url}`}
                     title={title}
                 />
                 <span 
-                    className={`nav-link ${this.state.isOpen ? "btn btn-primary" : ""} dropdown-toggle dropdown-toggle-split`}
+                    className={` ${this.state.isOpen ? "bg-success" : ""} dropdown-toggle dropdown-toggle-split`}
                     type="button"
                     id={link_url}
                     data-toggle="dropdown"
