@@ -19,13 +19,14 @@ export const SubNav = ({navList, title, baseUrl}) => {
     url = url.substring(url.lastIndexOf("/"));
     let loc = baseUrl.substring(baseUrl.lastIndexOf("/")); // location
 
+    
+
     return(
         <div className="nav flex-column">
             <h2>{title}</h2>
             {url === loc
-                ? generateLinks(navList, baseUrl)
+                ? generateLinks(navList, baseUrl, true)
                 : <Link className="nav-link text-success" to={`${baseUrl}`}>go back</Link>
-
             }
             <hr/>
         </div>
