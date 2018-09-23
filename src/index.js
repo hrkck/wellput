@@ -33,6 +33,11 @@ and my project page's link is,
 the variable is then that last part of the URL:
     '/reacted'
 
+    ## UPDATE: this website is moved from 
+        hrkucuk.github.io/reacted
+    to
+        hrkucuk.github.io
+
 This all makes sense, however using the var did not help me. So I simply added the sub directory "/reacted" to my basename of the BrowserRouter as you can see in the code above.
 
 That way it all worked. 
