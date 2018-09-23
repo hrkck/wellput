@@ -2,10 +2,10 @@ import React from 'react';
 import './assets/CV.css';
 
 export const englishCV = () => {
-    return (<iframe
+    return (<a target="_blank"
         className="embed-responsive"
         title="english-cv"
-        src={require("./assets/cv-hakkirizakucuk-english.pdf")}/>)
+        href={require("./assets/cv-hakkirizakucuk-english.pdf")}>English CV</a>)
 }
 
 export const germanCV = () => {

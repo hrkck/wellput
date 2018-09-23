@@ -7,7 +7,7 @@ import {frontEndProjects} from '../../../Navigation/Projects/FCCProjects/frontEn
 
 const FCCProjects = () => {
     return (
-        <Page>
+        <Page sub={true}>
             <SubNavigation baseUrl="/projects/FCCProjects">
                 <SubNav title="Projects List" navList={frontEndProjects}/>
             </SubNavigation>

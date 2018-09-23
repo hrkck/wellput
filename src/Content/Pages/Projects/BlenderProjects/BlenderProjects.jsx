@@ -11,7 +11,7 @@ const generateImageList = (list) => list.map(l => <img src={l} alt={l} key={l} c
 
 const BlenderProjects = () => {
     return (
-        <Page>
+        <Page sub={true}>
             <SubNavigation baseUrl="/projects/BlenderProjects">
                 <SubNav
                     title="Currently, there is nothing to navigate! :)"
