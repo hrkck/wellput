@@ -10,6 +10,7 @@ const About = () => {
             <p>For an insight, check my cv.</p>
             <a href={require("./CV/assets/cv-hakkirizakucuk-english.pdf")} target="_blank">CV</a>
             <p>I work on this website to put the weight off of mind.</p>
+            <p>This deployment will go directly to master branch.</p>
         </Page>
     )
 };
