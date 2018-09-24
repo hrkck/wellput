@@ -5,7 +5,13 @@ import Page from '../../../Components/Page/Page';
 const Home = () => (
     <Page>
         <h2>Home</h2>
-        <p>Testing default behavior of push.default</p>
+        <p>Final test and accepted work-flow:
+            <ol>
+                <li>Make changes in <pre>source</pre> branch</li>
+                <li><pre>npm run deploy</pre> to build the site on <pre>gh-pages</pre> branch.</li>
+                <li>Merge <pre>gh-pages</pre> onto <pre>master</pre>. Push <pre>master</pre> branch.</li>
+            </ol>
+        </p>
         <div className="col py-2 ml-3">
             <iframe
                 className="float-right border-radius-3"
