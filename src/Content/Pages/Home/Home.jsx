@@ -5,6 +5,7 @@ import Page from '../../../Components/Page/Page';
 const Home = () => (
     <Page>
         <h2>Home</h2>
+        <p>Testing default behavior of push.default</p>
         <div className="col py-2 ml-3">
             <iframe
                 className="float-right border-radius-3"
