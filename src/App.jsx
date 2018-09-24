@@ -7,7 +7,7 @@ import {Routes} from './Components/Routes/Routes';
 export default class App extends Component {
     render() {
         return (
-            <div>
+            <div className="">
                 <Navigation navList={mainNav}/>
                 <hr/>
                 <Routes pagesList={mainNav}/>
