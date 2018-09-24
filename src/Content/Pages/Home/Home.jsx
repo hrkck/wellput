@@ -14,6 +14,8 @@ const Home = () => (
                 </ol>
             </p>
         </strike>
+        <p>Problem solved by:</p>
+        <a href="https://github.com/tschaub/gh-pages#when-get-error-branch-already-exists"target="_blank">gh-pages "branch already exist" error.</a>
         <div className="col py-2 ml-3">
             <iframe
                 className="float-right border-radius-3"
