@@ -13,4 +13,4 @@ deploy:
   github_token: $build_hrkucuk_io
   local_dir: build
   on:
-    branch: master
+    branch: source

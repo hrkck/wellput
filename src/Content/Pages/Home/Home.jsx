@@ -5,15 +5,7 @@ import Page from '../../../Components/Page/Page';
 const Home = () => (
     <Page>
         <h2>Home</h2>
-        <strike>
-            <p>Final test and accepted work-flow:
-                <ol>
-                    <li>Make changes in <code>source</code> branch</li>
-                    <li><code>npm run deploy</code> to build the site on <code>gh-pages</code> branch.</li>
-                    <li>Merge <code>gh-pages</code> onto <code>master</code>. Push <code>master</code> branch.</li>
-                </ol>
-            </p>
-        </strike>
+        
         <p>Problem solved by:</p>
         <a href="https://github.com/tschaub/gh-pages#when-get-error-branch-already-exists"target="_blank">gh-pages "branch already exist" error.</a>
         <div className="col py-2 ml-3">
