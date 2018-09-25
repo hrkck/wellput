@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Jura");
+@import url("https://fonts.googleapis.com/css?family=Faster+One");
 body {
   font-family: 'Jura', sans-serif; }
+
+.brand {
+  font-family: 'Faster One', cursive; }
 
 .border-radius-4 {
   border-radius: 25px; }
