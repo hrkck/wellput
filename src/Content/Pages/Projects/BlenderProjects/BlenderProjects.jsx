@@ -1,5 +1,5 @@
 import React from 'react';
-import {SubNavigation, SubNav} from '../../../../Components/Navigation/SubNav';
+import {SubNavigation} from '../../../../Components/Navigation/SubNav';
 import {SubRoutes} from '../../../../Components/Routes/SubRoutes';
 import Page from '../../../../Components/Page/Page';
 
@@ -12,11 +12,10 @@ const generateImageList = (list) => list.map(l => <img src={l} alt={l} key={l} c
 const BlenderProjects = () => {
     return (
         <Page sub={true}>
-            <SubNavigation baseUrl="/projects/BlenderProjects">
-                <SubNav
-                    title="Currently, there is nothing to navigate! :)"
-                    navList={blenderProjects}/>
-            </SubNavigation>
+            <SubNavigation
+                title="Currently, there is nothing to navigate! :)"
+                navList={blenderProjects} 
+                baseUrl="/projects/BlenderProjects"/>
             <SubRoutes
                 baseUrl="/projects/BlenderProjects"
                 pagesList={blenderProjects}

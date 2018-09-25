@@ -1,5 +1,5 @@
 import React from 'react';
-import {SubNavigation, SubNav} from '../../../../Components/Navigation/SubNav';
+import {SubNavigation} from '../../../../Components/Navigation/SubNav';
 import {SubRoutes} from '../../../../Components/Routes/SubRoutes';
 import Page from '../../../../Components/Page/Page';
 
@@ -8,9 +8,7 @@ import {frontEndProjects} from '../../../Navigation/Projects/FCCProjects/frontEn
 const FCCProjects = () => {
     return (
         <Page sub={true}>
-            <SubNavigation baseUrl="/projects/FCCProjects">
-                <SubNav title="Projects List" navList={frontEndProjects}/>
-            </SubNavigation>
+            <SubNavigation title="Projects List" navList={frontEndProjects} baseUrl="/projects/FCCProjects"/>
             <SubRoutes baseUrl="/projects/FCCProjects" pagesList={frontEndProjects} render={()=>{
                 return(
                     <div>
