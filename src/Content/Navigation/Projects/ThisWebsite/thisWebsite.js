@@ -1,12 +1,12 @@
-// import {first} from "../../../Pages/Projects/ThisWebsite/posts/first"
+import {DisplayingMath} from "../../../Pages/Projects/ThisWebsite/posts/DisplayingMath"
 import {NotFound} from '../../../../Components/NotFound/Page404';
 
 export const ThisWebsite = [
-    // {
-    //     title: "first",
-    //     url: "first",
-    //     component: first
-    // },
+    {
+        title: "Displaying Mathematical Formulas",
+        url: "DisplayingMath",
+        component: DisplayingMath
+    },
     {
         title: "Not Found",
         url: ":NotFound",
