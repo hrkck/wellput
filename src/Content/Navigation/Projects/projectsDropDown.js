@@ -6,15 +6,15 @@ import {NotFound} from '../../../Components/NotFound/Page404';
 
 export const projectsDropDown = [
     {
-        title: "BlenderProjects",
+        title: "Blender Projects",
         url: "BlenderProjects",
         component: BlenderProjects
     }, {
-        title: "FCCProjects",
+        title: "FCC Projects",
         url: "FCCProjects",
         component: FCCProjects
     }, {
-        title: "ThisWebsite",
+        title: "This Website",
         url: "ThisWebsite",
         component: ThisWebsite
     }, {
