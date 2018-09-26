@@ -21,12 +21,12 @@ export const DisplayingMath = () =>
 
         You can right click on these formulas to customize the way they look or learn more information about them. That is thanks to MathJax.
 
-        <p>And here is how it looks like in raw format:</p>
+        <p>And here is how it looks like in AsciiMath syntax:</p>
         <pre>{block}</pre>
                 
         <MathJax.Context>
             <div>
-            <p>Another way is to place the formula inline: <MathJax.Node inline>{inline}</MathJax.Node></p>
+            <p>Another way to display math expressions is to place them inline: <MathJax.Node inline>{inline}</MathJax.Node></p>
             </div>
         </MathJax.Context>
 
