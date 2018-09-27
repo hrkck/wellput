@@ -35,14 +35,25 @@ class DropDown extends Component {
                 />
                 <div className={menuClass} aria-labelledby={link_url} onClick={this.toggleDropDown}>
                     {
-                        dropDownList.map(dropDownItem =>
-                            <SingleLink 
-                                link_url={dropDownItem.url} 
-                                to={`${baseUrl}/${link_url}/${dropDownItem.url}`} 
-                                title={dropDownItem.title} 
-                                isDropDown={true}
-                                key={`${baseUrl}/${link_url}/${dropDownItem.url}`}
-                            />
+                        dropDownList.map(dropDownItem => {
+                            if(dropDownItem.dropDownHeader){
+                                return(
+                                    <h6 class="dropdown-header">{dropDownItem.dropDownHeader}</h6>
+                                )
+                            }else{
+                                return(
+                                    <SingleLink 
+                                        link_url={dropDownItem.url} 
+                                        to={`${baseUrl}/${link_url}/${dropDownItem.url}`} 
+                                        title={dropDownItem.title} 
+                                        isDropDown={true}
+                                        key={`${baseUrl}/${link_url}/${dropDownItem.url}`}
+                                    />
+                                )
+                            }
+                        }
+                            
+                            
                         )
                     }
                 </div>
