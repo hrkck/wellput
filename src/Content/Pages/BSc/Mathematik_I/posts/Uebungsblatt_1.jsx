@@ -24,8 +24,7 @@ const Uebungsblatt_1 = () => {
                 toplam ve çarpım sembolleri,logaritmanın kaba tahmini)</p>
 
             <h3>Regeln für Rechnungen</h3>
-            <h6></h6>
-
+            
             <p>Potenz Rechenregeln:</p>
             <MathJax.Context>
                 <div className="math-block">
