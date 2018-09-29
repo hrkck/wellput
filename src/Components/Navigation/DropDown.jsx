@@ -25,7 +25,7 @@ class DropDown extends Component {
                     to={`${baseUrl}/${link_url}`}
                     title={title}
                 />
-                <span 
+                <button 
                     className={` ${this.state.isOpen ? "bg-success" : ""} dropdown-toggle dropdown-toggle-split`}
                     type="button"
                     id={link_url}
