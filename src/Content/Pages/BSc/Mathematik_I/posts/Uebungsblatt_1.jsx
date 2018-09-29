@@ -29,23 +29,23 @@ const Uebungsblatt_1 = () => {
             <MathJax.Context>
                 <div className="math-block">
                     <MathJax.Node>
-                        a^r * a^s = a^(r+s) " für alle " a in RR " und " r, s in NN(RR)
+                        a^r * a^s = a^(r+s) 
                     </MathJax.Node>
                     <hr/>
                     <MathJax.Node>
-                        a^r / a^s = a^r-s " für alle " a in RR not {0} " und " r, s in NN(RR)
+                        a^r / a^s = a^r-s 
                     </MathJax.Node>
                     <hr/>
                     <MathJax.Node>
-                        a^r * b^r = (a * b)^r " für alle " a in RR " und " r in NN(RR)
+                        a^r * b^r = (a * b)^r
                     </MathJax.Node>
                     <hr/>
                     <MathJax.Node>
-                        a^r / b^r = (a / b)^r " für alle " a in RR " wo " b != 0 " und " r in NN(RR)
+                        a^r / b^r = (a / b)^r 
                     </MathJax.Node>
                     <hr/>
                     <MathJax.Node>
-                        (a^r)^s = a^(r*s) " für alle " a in RR " und " r, s in NN(RR)
+                        (a^r)^s = a^(r*s)
                     </MathJax.Node>
                 </div>
             </MathJax.Context>
