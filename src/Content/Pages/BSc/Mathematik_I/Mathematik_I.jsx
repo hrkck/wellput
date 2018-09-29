@@ -3,18 +3,19 @@ import {SubNavigation} from '../../../../Components/Navigation/SubNav';
 import {SubRoutes} from '../../../../Components/Routes/SubRoutes';
 import Page from '../../../../Components/Page/Page';
 
-import { mathematikPosts } from "../../../Navigation/BSc/Mathematik_I/Mathematik_I";
+import { week1} from "../../../Navigation/BSc/Mathematik_I/Mathematik_I";
+
 
 const Mathematik_I = () => {
     return (
         <Page sub={true}>
             <SubNavigation
-                title="Weeks of notes will appear below as posts"
-                navList={mathematikPosts} 
+                title="Posts"
+                navList={week1} 
                 baseUrl="/BSc/Mathematik_I"/>
             <SubRoutes
                 baseUrl="/BSc/Mathematik_I"
-                pagesList={mathematikPosts}
+                pagesList={week1}
                 render={() => {
                 return (
                     <div className="">
