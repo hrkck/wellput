@@ -8,7 +8,8 @@ p, pre {
 
 .math-block {
   margin-bottom: 30px;
-  text-align: center; }
+  text-align: center;
+  overflow-x: scroll; }
 
 .brand {
   font-family: 'Faster One', cursive; }
