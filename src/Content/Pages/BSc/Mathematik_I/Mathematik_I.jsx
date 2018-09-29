@@ -19,7 +19,7 @@ const Mathematik_I = () => {
                 render={() => {
                 return (
                     <div className="">
-                        <h2>Mathematik_I</h2>
+                        <h2>Mathematik I</h2>
                     </div>
                 )
             }}/>

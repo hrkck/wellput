@@ -3,7 +3,7 @@ import React from 'react';
 import SingleLink from "./SingleLink";
 import DropDown from "./DropDown";
 
-export let generateLinks = (links, baseUrl = "", subNav = false) => 
+export const generateLinks = (links, baseUrl = "", subNav = false) => 
     links.map(link => 
         <div className="col-12 col-md-auto" key={`${baseUrl}/${link.url}`}>
             {
