@@ -20,6 +20,7 @@ const Mathematik_I = () => {
                 return (
                     <div className="">
                         <h2>Mathematik I</h2>
+                        <p>Hier kann ich alle Notizen von Vorlesung Math I finden, die ich aufgenommen habe.</p>
                     </div>
                 )
             }}/>
