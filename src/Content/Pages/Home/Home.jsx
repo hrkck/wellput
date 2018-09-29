@@ -4,7 +4,7 @@ import Page from '../../../Components/Page/Page';
 
 const Home = () => (
     <Page>
-        <div className="d-block text-center">
+        <div className="text-center">
             Good programmers write good code. <br />
             Great programmers write no code. <br />
             Zen programmers delete code. <br />
