@@ -11,15 +11,15 @@ const Uebungsblatt_1 = () => {
                 gibt es nur die Rechenregeln für die Begriffen. Das ist wie ein "cheat sheet".
             </p>
 
-            <p>Alle die Begriffen, die in der Übugunsblatt waren:</p>
+            <p>Alle die Begriffen, die in der Übungsblatt waren:</p>
             <p>Brüche, Potenzen, Wurzeln, Logarithmen, Absolutbeträge, Polynomdivion, Lösen
                 von Gleichungen: einige Grundprinzipien, Ausklammern der grössten Potenz,
                 Gleichungen, Quadratische Gleichung mit Parameter, Fakultäten und
-                Binomialkoeffizenten, Summen und Produkte, Summenzeichen, anwendung, grobe
+                Binomialkoeffizienten, Summen und Produkte, Summenzeichen, anwendung, grobe
                 Schätzung des Logarithmus
                 <br/><hr/>
                 (Kesirler, kuvvetler, kökler, logaritmalar, mutlak değerler, polinom bölünme,
-                denklemlerin çözümü: bazı temel prensipler, en büyük çarpanı bulma,
+                denklemlerin çözümü: bazı temel prensipler, en büyük çarpan parantezine alma,
                 denklemler, parametrelerle ikinci dereceden denklemler, faktöriyel ve binom katsayıları,
                 toplam ve çarpım sembolleri,logaritmanın kaba tahmini)</p>
 
