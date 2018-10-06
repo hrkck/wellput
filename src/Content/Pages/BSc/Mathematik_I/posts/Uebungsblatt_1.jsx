@@ -93,20 +93,20 @@ const Uebungsblatt_1 = () => {
             <MathJax.Context>
                 <div>
                     <p>
-                        Überlegung am Beispiel
+                        Überlegung am Beispiel &nbsp;
                         <MathJax.Node inline>2^3 = 8</MathJax.Node>
                     </p>
                     <p>
                         <MathJax.Node inline>2^3 = x</MathJax.Node>
-                        ... Potenzieren
+                        &nbsp; ... Potenzieren
                     </p>
                     <p>
                         <MathJax.Node inline>x^3 = 8</MathJax.Node>
-                        ... Wurzelnziehen
+                        &nbsp; ... Wurzelnziehen
                     </p>
                     <p>
                         <MathJax.Node inline>2^x = 8</MathJax.Node>
-                        ... ?
+                        &nbsp; ... ?
                     </p>
                     <p>
                         wir brauchen jetzt eine weitere Umkehroperation des Potenzierens, mit
@@ -130,7 +130,10 @@ const Uebungsblatt_1 = () => {
                     <hr/>
                     <MathJax.Node>log_e, ln</MathJax.Node>
                     <hr/>
+                    <p>Zwei Formeln unter sind eigentlich gleich, sie haben aber nur ein andere Perspektive</p>
                     <MathJax.Node>a^(log_a x) = x</MathJax.Node>
+                    <hr/>
+                    <MathJax.Node>a^x = e^(x * ln a)</MathJax.Node>
                 </div>
             </MathJax.Context>
 
