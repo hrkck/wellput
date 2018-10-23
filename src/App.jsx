@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 
-import {nav} from './Content/Navigation/nav';
+import {nav} from './Content/nav';
 import {Navigation} from './Components/Navigation/Nav';
 import {Routes} from './Components/Routes/Routes';
 

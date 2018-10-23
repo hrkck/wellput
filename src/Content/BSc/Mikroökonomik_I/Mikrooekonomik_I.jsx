@@ -1,9 +1,9 @@
 import React from 'react';
-import {SubNavigation} from '../../../../Components/Navigation/SubNav';
-import {SubRoutes} from '../../../../Components/Routes/SubRoutes';
-import Page from '../../../../Components/Page/Page';
+import {SubNavigation} from '../../../Components/Navigation/SubNav';
+import {SubRoutes} from '../../../Components/Routes/SubRoutes';
+import Page from '../../../Components/Page/Page';
 
-import { nav } from "../../../Navigation/nav";
+import { nav } from "../../nav";
 
 const Mikrooekonomik_I = () => {
     return (

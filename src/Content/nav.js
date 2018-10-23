@@ -1,23 +1,24 @@
-import Home from '../Pages/Home/Home';
-import {NotFound} from '../../Components/NotFound/Page404';
+import {NotFound} from '../Components/NotFound/Page404';
 
-import Projects from "../Pages/Projects/Projects";
-import BlenderProjects from '../Pages/Projects/BlenderProjects/BlenderProjects';
-import FCCProjects from '../Pages/Projects/FCCProjects/FCCProjects';
-import {Portfolio, TechnicalDocumentationPage, ProductLandingPage, SurveyForm, TributePage} from '../Pages/Projects/FCCProjects/Projects/Projects';
-import ThisWebsite from '../Pages/Projects/ThisWebsite/ThisWebsite';
-import {DisplayingMath} from "../Pages/Projects/ThisWebsite/posts/DisplayingMath"
+import Home from './Home/Home';
 
-import BSc from "../Pages/BSc/BSc";
-import Betriebswirtschaftslehre_I from '../Pages/BSc/Betriebswirtschaftslehre_I/Betriebswirtschaftslehre_I';
-import Informatik_I from "../Pages/BSc/Informatik_I/Informatik_I";
-import InformatikUndWirtschaft from "../Pages/BSc/InformatikUndWirtschaft/InformatikUndWirtschaft";
-import Mathematik_I from "../Pages/BSc/Mathematik_I/Mathematik_I";
-import Uebungsblatt_1 from "../Pages/BSc/Mathematik_I/posts/Uebungsblatt_1";
-import Uebungsblatt_2 from "../Pages/BSc/Mathematik_I/posts/Uebungsblatt_2";
-import Uebungsblatt_3 from "../Pages/BSc/Mathematik_I/posts/Uebungsblatt_3";
-import MenschUndComputer from "../Pages/BSc/MenschUndComputer/MenschUndComputer";
-import Mikrooekonomik_I from "../Pages/BSc/Mikroökonomik_I/Mikrooekonomik_I";
+import Projects from "./Projects/Projects";
+import BlenderProjects from './Projects/BlenderProjects/BlenderProjects';
+import FCCProjects from './Projects/FCCProjects/FCCProjects';
+import {Portfolio, TechnicalDocumentationPage, ProductLandingPage, SurveyForm, TributePage} from './Projects/FCCProjects/Projects/Projects';
+import ThisWebsite from './Projects/ThisWebsite/ThisWebsite';
+import {DisplayingMath} from "./Projects/ThisWebsite/posts/DisplayingMath"
+
+import BSc from "./BSc/BSc";
+import Betriebswirtschaftslehre_I from './BSc/Betriebswirtschaftslehre_I/Betriebswirtschaftslehre_I';
+import Informatik_I from "./BSc/Informatik_I/Informatik_I";
+import InformatikUndWirtschaft from "./BSc/InformatikUndWirtschaft/InformatikUndWirtschaft";
+import Mathematik_I from "./BSc/Mathematik_I/Mathematik_I";
+import Uebungsblatt_1 from "./BSc/Mathematik_I/posts/Uebungsblatt_1";
+import Uebungsblatt_2 from "./BSc/Mathematik_I/posts/Uebungsblatt_2";
+import Uebungsblatt_3 from "./BSc/Mathematik_I/posts/Uebungsblatt_3";
+import MenschUndComputer from "./BSc/MenschUndComputer/MenschUndComputer";
+import Mikrooekonomik_I from "./BSc/Mikroökonomik_I/Mikrooekonomik_I";
 
 
 export const nav = {
