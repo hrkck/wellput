@@ -3,7 +3,7 @@ import {SubNavigation} from '../../../../Components/Navigation/SubNav';
 import {SubRoutes} from '../../../../Components/Routes/SubRoutes';
 import Page from '../../../../Components/Page/Page';
 
-import {blenderProjects} from '../../../Navigation/Projects/BlenderProjects/blenderProjects';
+import {nav} from '../../../Navigation/nav';
 import './assets/blenderProjects.css';
 import {imgList} from "./media/imagesList";
 
@@ -14,11 +14,11 @@ const BlenderProjects = () => {
         <Page sub={true}>
             <SubNavigation
                 title="Currently, there is nothing to navigate! :)"
-                navList={blenderProjects} 
+                navList={nav.main[1].dropDown[0].posts} 
                 baseUrl="/projects/BlenderProjects"/>
             <SubRoutes
                 baseUrl="/projects/BlenderProjects"
-                pagesList={blenderProjects}
+                pagesList={nav.main[1].dropDown[0].posts}
                 render={() => {
                 return (
                     <div className="text-center">

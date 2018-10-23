@@ -3,18 +3,18 @@ import {SubNavigation} from '../../../../Components/Navigation/SubNav';
 import {SubRoutes} from '../../../../Components/Routes/SubRoutes';
 import Page from '../../../../Components/Page/Page';
 
-import { menschUndComputerPosts } from "../../../Navigation/BSc/MenschUndComputer/MenschUndComputer";
+import { nav } from "../../../Navigation/nav";
 
 const MenschUndComputer = () => {
     return (
         <Page sub={true}>
             <SubNavigation
                 title="Weeks of notes will appear below as posts"
-                navList={menschUndComputerPosts} 
+                navList={nav.main[2].dropDown[5].posts} 
                 baseUrl="/BSc/MenschUndComputer"/>
             <SubRoutes
                 baseUrl="/BSc/MenschUndComputer"
-                pagesList={menschUndComputerPosts}
+                pagesList={nav.main[2].dropDown[5].posts}
                 render={() => {
                 return (
                     <div className="">

@@ -3,19 +3,18 @@ import {SubNavigation} from '../../../../Components/Navigation/SubNav';
 import {SubRoutes} from '../../../../Components/Routes/SubRoutes';
 import Page from '../../../../Components/Page/Page';
 
-import { week1} from "../../../Navigation/BSc/Mathematik_I/Mathematik_I";
-
+import { nav } from "../../../Navigation/nav";
 
 const Mathematik_I = () => {
     return (
         <Page sub={true}>
             <SubNavigation
                 title="Posts"
-                navList={week1} 
+                navList={nav.main[2].dropDown[4].posts} 
                 baseUrl="/BSc/Mathematik_I"/>
             <SubRoutes
                 baseUrl="/BSc/Mathematik_I"
-                pagesList={week1}
+                pagesList={nav.main[2].dropDown[4].posts}
                 render={() => {
                 return (
                     <div className="">

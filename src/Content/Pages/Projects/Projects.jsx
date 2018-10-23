@@ -2,10 +2,10 @@ import React from 'react';
 import Page from '../../../Components/Page/Page';
 import {DropDownRoutes} from '../../../Components/Routes/DropDownRoutes';
 
-import {projectsDropDown} from '../../Navigation/Projects/projectsDropDown';
+import {nav} from '../../Navigation/nav';
 
 const Projects = () =>
-    <DropDownRoutes baseUrl="/projects" pagesList={projectsDropDown} render={() => {
+    <DropDownRoutes baseUrl="/projects" pagesList={nav.main[1].dropDown} render={() => {
         return(
             <Page>
                 <h2>

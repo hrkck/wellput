@@ -3,18 +3,18 @@ import {SubNavigation} from '../../../../Components/Navigation/SubNav';
 import {SubRoutes} from '../../../../Components/Routes/SubRoutes';
 import Page from '../../../../Components/Page/Page';
 
-import { mikrooekonomikPosts } from "../../../Navigation/BSc/Mikrooekonomik_I/Mikrooekonomik_I";
+import { nav } from "../../../Navigation/nav";
 
 const Mikrooekonomik_I = () => {
     return (
         <Page sub={true}>
             <SubNavigation
                 title="Weeks of notes will appear below as posts"
-                navList={mikrooekonomikPosts} 
+                navList={nav.main[2].dropDown[6].posts} 
                 baseUrl="/BSc/Mikrooekonomik_I"/>
             <SubRoutes
                 baseUrl="/BSc/Mikrooekonomik_I"
-                pagesList={mikrooekonomikPosts}
+                pagesList={nav.main[2].dropDown[6].posts}
                 render={() => {
                 return (
                     <div className="">

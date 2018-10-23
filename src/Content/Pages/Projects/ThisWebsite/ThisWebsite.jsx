@@ -3,13 +3,13 @@ import {SubNavigation} from '../../../../Components/Navigation/SubNav';
 import {SubRoutes} from '../../../../Components/Routes/SubRoutes';
 import Page from '../../../../Components/Page/Page';
 
-import {ThisWebsite} from '../../../Navigation/Projects/ThisWebsite/thisWebsite';
+import {nav} from '../../../Navigation/nav';
 
-const FCCProjects = () => {
+const ThisWebsite = () => {
     return (
         <Page sub={true}>
-            <SubNavigation title="Posts" navList={ThisWebsite} baseUrl="/projects/ThisWebsite"/>
-            <SubRoutes baseUrl="/projects/ThisWebsite" pagesList={ThisWebsite} render={()=>{
+            <SubNavigation title="Posts" navList={nav.main[1].dropDown[2].posts} baseUrl="/projects/ThisWebsite"/>
+            <SubRoutes baseUrl="/projects/ThisWebsite" pagesList={nav.main[1].dropDown[2].posts} render={()=>{
                 return(
                     <div>
                         <div className="brand text-danger">
@@ -36,4 +36,4 @@ const FCCProjects = () => {
     );
 };
 
-export default FCCProjects;
+export default ThisWebsite;
