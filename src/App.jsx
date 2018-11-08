@@ -8,9 +8,9 @@ export default class App extends Component {
     render() {
         return (
             <div className="">
-                <Navigation navList={nav.main}/>
+                <Navigation navList={nav}/>
                 <hr/>
-                <Routes pagesList={nav.main}/>
+                <Routes pagesList={nav}/>
                 
             </div>
         );

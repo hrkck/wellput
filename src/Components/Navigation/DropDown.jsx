@@ -9,10 +9,31 @@ class DropDown extends Component {
       this.state = {
          isOpen: false
       };
-      this.toggleDropDown.bind(this);
+      this.toggleDropDown.bind(this)
+      this.generateDropDown.bind(this)
     };
 
     toggleDropDown = () => this.setState({isOpen: !this.state.isOpen})
+
+    generateDropDown = (dropDownList, baseUrl, link_url) => {
+        let l = []
+
+        for(let dropDownItem in dropDownList){
+            if(dropDownItem.dropDownHeader){
+                l.push(<h6 class="dropdown-header">{dropDownItem.dropDownHeader}</h6>)
+            }else{
+                l.push( <SingleLink 
+                        link_url={dropDownItem.url} 
+                        to={`${baseUrl}/${link_url}/${dropDownItem.url}`} 
+                        title={dropDownItem.title} 
+                        isDropDown={true}
+                        key={`${baseUrl}/${link_url}/${dropDownItem.url}`}
+                    />)
+            }
+        }
+        
+        return l
+    }
     
     render() {
         const menuClass = `dropdown-menu ${this.state.isOpen ? "show" : ""}`;
@@ -34,28 +55,7 @@ class DropDown extends Component {
                     onClick={this.toggleDropDown}
                 />
                 <div className={menuClass} aria-labelledby={link_url} onClick={this.toggleDropDown}>
-                    {
-                        dropDownList.map(dropDownItem => {
-                            if(dropDownItem.dropDownHeader){
-                                return(
-                                    <h6 class="dropdown-header">{dropDownItem.dropDownHeader}</h6>
-                                )
-                            }else{
-                                return(
-                                    <SingleLink 
-                                        link_url={dropDownItem.url} 
-                                        to={`${baseUrl}/${link_url}/${dropDownItem.url}`} 
-                                        title={dropDownItem.title} 
-                                        isDropDown={true}
-                                        key={`${baseUrl}/${link_url}/${dropDownItem.url}`}
-                                    />
-                                )
-                            }
-                        }
-                            
-                            
-                        )
-                    }
+                    {this.generateDropDown(dropDownList, baseUrl, link_url)}
                 </div>
             </div>
         );

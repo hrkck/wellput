@@ -5,7 +5,7 @@ import {DropDownRoutes} from '../../Components/Routes/DropDownRoutes';
 import {nav} from '../nav';
 
 const Projects = () =>
-    <DropDownRoutes baseUrl="/projects" pagesList={nav.main[1].dropDown} render={() => {
+    <DropDownRoutes baseUrl="/projects" pagesList={nav.Projects.dropDown} render={() => {
         return(
             <Page>
                 <h2>
