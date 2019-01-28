@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "7cc2f81d3dc48e7fefdf",
+    "revision": "6a39dcbf07f9ffe3b60d",
     "url": "/wellput/static/css/main.aab8e807.chunk.css"
   },
   {
-    "revision": "7cc2f81d3dc48e7fefdf",
-    "url": "/wellput/static/js/main.7cc2f81d.chunk.js"
+    "revision": "6a39dcbf07f9ffe3b60d",
+    "url": "/wellput/static/js/main.6a39dcbf.chunk.js"
   },
   {
     "revision": "87969fe9ca0cb731b427",
@@ -140,7 +140,7 @@ self.__precacheManifest = [
     "url": "/wellput/static/media/Zen-min.d2a15c95.jpg"
   },
   {
-    "revision": "731471d56decd81825152043b963dd3b",
+    "revision": "bc3e9711d878a7ea11f5c4fcd65e9949",
     "url": "/wellput/index.html"
   }
 ];
