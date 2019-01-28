@@ -7,7 +7,7 @@ import registerServiceWorker from './registerServiceWorker';
 import "./style/bootstrap.css";
 import "./style/App.css";
 
-ReactDOM.render(<Router basename={`${process.env.PUBLIC_URL}/wellput`}><App /></Router>, document.getElementById('root'));
+ReactDOM.render(<Router basename={`${process.env.PUBLIC_URL}`}><App /></Router>, document.getElementById('root'));
 registerServiceWorker();
 
 
