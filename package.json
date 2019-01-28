@@ -2,7 +2,7 @@
   "name": "wellput.github.io",
   "version": "1.1.1",
   "private": true,
-  "homepage": "https://wellput.github.io",
+  "homepage": "https://archetypum.github.io/wellput",
   "dependencies": {
     "node-sass-chokidar": "^1.3.4",
     "npm-run-all": "^4.1.5",
